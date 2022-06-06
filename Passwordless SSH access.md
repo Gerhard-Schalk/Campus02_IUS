@@ -21,6 +21,14 @@ You will also be asked to enter a passphrase, which is optional. The passphrase 
 
 Now look inside your ```c:\users\<your user name>\.ssh``` directory and you should see the files **```id_rsa```** and **```id_rsa.pub```**:
 
+```
+cd .ssh
+```
+
+```
+dir
+```
+
 - The **```id_rsa```** file is your private key. Keep this file on your computer.
 - The **```id_rsa.pub```** file is your public key. This is what you share with machines that you connect to: in this case your Raspberry Pi. When the machine you try to connect to matches up your public and private key, it will allow you to connect.
 
