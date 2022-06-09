@@ -1,2 +1,2 @@
-# Campus02 IUS Examples
+# Campus02 IUS Lab exercises
 - [Passwordless SSH access](/Passwordless_SSH_access.md)
