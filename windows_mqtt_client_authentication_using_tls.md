@@ -98,3 +98,4 @@ By now you should have all these files:
 ## Step 2: Setup MQTT Explorer
 Copy the ```MQTT-Explorer-0.4.0-beta1.exe``` into the ```Raspi_MQTT_Demo``` folder.
 
+![MQTT Explorer_Connection_Settings.png](/images/MQTT Explorer_Connection_Settings.png)
