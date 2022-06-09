@@ -70,6 +70,8 @@ Now, we create a signing request file from this key
 ```
 openssl req -out broker.csr -key broker.key -new
 ```
+**Note:** The Common Name (CN) needs to match the hostname of your broker!
+          For your example we need to use "192.168.0.100".
 Output:
 ```
 You are about to be asked to enter information that will be incorporated
@@ -84,7 +86,7 @@ State or Province Name (full name) [Some-State]:Austria
 Locality Name (eg, city) []:Graz
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:Campus02 AT
 Organizational Unit Name (eg, section) []:
-Common Name (e.g. server FQDN or YOUR name) []:Raspi MQTT Broker
+Common Name (e.g. server FQDN or YOUR name) []:192.168.0.100
 Email Address []:
 
 Please enter the following 'extra' attributes
@@ -122,6 +124,9 @@ Now, we create a signing request file from this key
 ```
 openssl req -out client.csr -key client.key -new
 ```
+**Note:** The Common Name (CN) needs to match the hostname of your broker!
+          For your example we need to use "192.168.0.100".
+
 Output:
 ```
 You are about to be asked to enter information that will be incorporated
@@ -136,7 +141,7 @@ State or Province Name (full name) [Some-State]:Austria
 Locality Name (eg, city) []:Graz
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:Campus 02 AT
 Organizational Unit Name (eg, section) []:
-Common Name (e.g. server FQDN or YOUR name) []:MQTT Client Raspi
+Common Name (e.g. server FQDN or YOUR name) []:192.168.0.100
 Email Address []:
 
 Please enter the following 'extra' attributes
