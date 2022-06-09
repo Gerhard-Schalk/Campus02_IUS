@@ -46,11 +46,13 @@ Generate a client RSA key
 ```
 openssl genrsa -out client.key 2048
 ```
-Now, we create a signing request file from this key
+Now, we create a signing request file from this key.
+
+(Wikipedia https://de.wikipedia.org/wiki/Certificate_Signing_Request)
 ```
 openssl req -out client.csr -key client.key -new
 ```
-**Note:** The Common Name (CN) needs to match the hostname of your broker!
+**Note:**  The Common Name (CN) needs to match the hostname of your broker!
           For your example we need to use "192.168.0.100".
 
 Output:
@@ -95,6 +97,21 @@ By now you should have all these files:
     `-- client.key
 ```
 
-## Step 2: Setup MQTT Explorer
+## Step 3: Setup MQTT Explorer
 Copy the ```MQTT-Explorer-0.4.0-beta1.exe``` into the ```Raspi_MQTT_Demo``` folder.
+
+***MQTT Connection settings:***
+
+![MQTT_Explorer_Connection_Settings.png](/images/MQTT_Explorer_Connection_Settings.png)
+
+***Advance MQTT Connection settings:***
+![MQTT_Explorer_Connection_Settings2.png](/images/MQTT_Explorer_Connection_Settings2.png)
+
+***TLS Certification settings:***
+![MQTT_Explorer_Connection_Settings3.png](/images/MQTT_Explorer_Connection_Settings3.png)
+
+***Receiving MQTT messages:***
+![MQTT_Explorer_ReceivingCAN_Messages](/images/MQTT_Explorer_ReceivingCAN_Messages.png)
+
+
 
